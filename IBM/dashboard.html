@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard | Cognos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    IBM Cognos Analytics Dashboard
+    <button onclick="logout()" style="float:right;width:80px;margin-top:-5px;background:red;">Logout</button>
+</div>
+
+<div style="text-align:center;margin-top:100px;">
+    <h2>Open Student Performance Dashboard</h2>
+    <button onclick="openCognos()" style="width:250px;height:50px;font-size:18px;">
+        Open Cognos Dashboard
+    </button>
+</div>
+
+<script src="script.js"></script>
+<script>
+function openCognos(){
+    window.open(
+      "https://us1.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FQuestion%2B6%2Bdashboard&shareMode=embedded",
+      "_blank"
+    );
+}
+</script>
+
+</body>
+</html>
